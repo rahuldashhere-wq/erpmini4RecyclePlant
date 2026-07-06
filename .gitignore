@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+dist/
+web-admin/dist/
+functions/lib/
+scripts/serviceAccountKey.json
+.env
+*.log

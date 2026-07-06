@@ -1,0 +1,27 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Any signed-in operator (Firebase Anonymous Auth is enough for MVP —
+    // see mobile/src/api/auth.ts) can read/write the day-to-day entries.
+    match /wastageEntries/{docId} {
+      allow read, write: if request.auth != null;
+    }
+    match /productionEntries/{docId} {
+      allow read, write: if request.auth != null;
+    }
+    match /granuleIssues/{docId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // adminSettings holds the passcode hash and money-calculation rules.
+    // Nobody reads or writes this directly from a client — only the Cloud
+    // Functions (which run with admin privileges) touch it. This is what
+    // makes "change password once, works on app + desktop" both true and
+    // safe: the raw passcode never has to live in Firestore rules logic.
+    match /adminSettings/{docId} {
+      allow read, write: if false;
+    }
+  }
+}

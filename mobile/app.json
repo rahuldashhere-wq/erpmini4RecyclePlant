@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Alliance Polysacks RP Plant",
+    "slug": "alliance-rp-plant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#000000"
+    },
+    "android": {
+      "package": "com.alliancepolysacks.rpplant",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.alliancepolysacks.rpplant"
+    }
+  }
+}
