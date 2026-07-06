@@ -19,6 +19,11 @@
     },
     "ios": {
       "bundleIdentifier": "com.alliancepolysacks.rpplant"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ee76db08-72d4-4e55-b058-6d3d05a664ba"
+      }
     }
   }
 }
