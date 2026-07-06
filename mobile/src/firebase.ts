@@ -6,12 +6,12 @@ import { getAuth, signInAnonymously, onAuthStateChanged } from "firebase/auth";
 // Free "Spark" plan is enough for everything here — Firestore + Anonymous Auth
 // don't require billing to be enabled.
 const firebaseConfig = {
-  apiKey: "REPLACE_ME",
-  authDomain: "REPLACE_ME.firebaseapp.com",
-  projectId: "REPLACE_ME",
-  storageBucket: "REPLACE_ME.appspot.com",
-  messagingSenderId: "REPLACE_ME",
-  appId: "REPLACE_ME",
+  apiKey: "AIzaSyDEIoz5ZpqHjx6GSS-G1MOjX-tcXmSaHoO",
+  authDomain: "alliance-rp.firebaseapp.com",
+  projectId: "alliance-rp",
+  storageBucket: "alliance-rp.firebasestorage.app",
+  messagingSenderId: "41402533616",
+  appId: "1:41402533616:web:80dd84d66bafc0d3902435",
 };
 
 export const app = initializeApp(firebaseConfig);

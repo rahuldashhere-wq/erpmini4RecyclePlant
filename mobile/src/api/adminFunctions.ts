@@ -5,7 +5,7 @@ import { PlantKey, AdminReport } from "./types";
 // to this one URL. The desktop portal (web-admin itself) uses the exact same
 // API routes, so a password/rate change from either place is instantly true
 // on both.
-export const API_BASE = "https://REPLACE_ME.vercel.app";
+export const API_BASE = "https://erpmini4-recycle-plant.vercel.app";
 
 async function postJson(path: string, body: unknown) {
   const res = await fetch(`${API_BASE}${path}`, {
